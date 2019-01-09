@@ -1,13 +1,13 @@
-# yii2-daterange-picker
-yii2-daterange-picker
+# yii2-aplayer
+yii2-aplayer
 ### 使用方法
 
 ```
-use jerryteng\daterangepicker\DateRangePicker;
-echo DateRangePicker::widget([
-        'id'=>'filtertime',
+use smarteng\aplayer\Aplayer;
+echo Aplayer::widget([
+        'id'=>'audioplayer',
         'options' => array(
-            'isTodayValid'=> true,
+            'container'=> "document.getElementById('aplayer')",
             'startDate' =>'',
             'endDate'=>'',
             //'magicSelect'=>true,
@@ -20,7 +20,5 @@ echo DateRangePicker::widget([
 ```
 
 ```
-<div>
-    <input type="text" id="filtertime">
-</div>
+<div id="aplayer"></div>
 ```
