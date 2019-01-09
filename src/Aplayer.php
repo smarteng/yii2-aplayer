@@ -1,5 +1,5 @@
 <?php
-namespace jerryteng\daterangepicker;
+namespace smarteng\aplayer;
 
 use yii\helpers\Json;
 use yii\base\Widget;
