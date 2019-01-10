@@ -41,7 +41,7 @@ class Aplayer extends Widget
         $this->options['container'] =  new JsExpression($this->options['container']);
         $jsOptions = Json::encode($this->options);
         $js = <<<JS
-        var ap = new APlayer({$jsOptions});
+        const ap = new APlayer({$jsOptions});
 JS;
 
         $this->view->registerJs($js, View::POS_END, $key);
