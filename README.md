@@ -23,3 +23,11 @@ use smarteng\aplayer\Aplayer;
 ```
 <div id="aplayer"></div>
 ```
+### 具体的配置信息： 
+https://aplayer.js.org/#/zh-Hans/
+
+### 使用的项目：
+
+[英语课](https://www.yingyuke.net/ "英语课"). 
+
+- https://www.yingyuke.net/
