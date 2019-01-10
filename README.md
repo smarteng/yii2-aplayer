@@ -4,19 +4,20 @@ yii2-aplayer
 
 ```
 use smarteng\aplayer\Aplayer;
-echo Aplayer::widget([
-        'id'=>'audioplayer',
-        'options' => array(
-            'container'=> "document.getElementById('aplayer')",
-            'startDate' =>'',
-            'endDate'=>'',
-            //'magicSelect'=>true,
-            'autoSubmit'=>true,
-            'defaultText'=>'/',
-            //'inputTrigger'=>'input_trigger_demo4',
-            'success'=>"function(obj) { $('#filtertime').val(obj.startDate + '/' + obj.endDate).change(); }"
-        )
-    ]);
+<?= \smarteng\aplayer\Aplayer::widget([
+    'id'=>'audioplayer',
+    'options' => [
+        'container'=> "document.getElementById('aplayer')",
+        "audio" => [
+                [
+                    "name"=> '前前前世',
+                    "artist"  => 'RADWIMPS',
+                    "url" => 'https://moeplayer.b0.upaiyun.com/aplayer/yourname.mp3',
+                    "cover" =>  'https://moeplayer.b0.upaiyun.com/aplayer/yourname.jpg'
+                ]
+        ]
+    ]
+]);?>
 ```
 
 ```
