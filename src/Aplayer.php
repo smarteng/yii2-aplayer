@@ -45,7 +45,7 @@ class Aplayer extends Widget
         ap.init();
 JS;
 
-        $this->view->registerJs($js, View::POS_READY, $key);
+        $this->view->registerJs($js, View::POS_END, $key);
     }
 
 }
