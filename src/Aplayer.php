@@ -38,7 +38,7 @@ class Aplayer extends Widget
         AplayerAsset::register($this->view);
 
         $key = __CLASS__ . '#' . $this->id;
-
+        $this->options['container'] =  new JsExpression($this->options['container']);
         $jsOptions = Json::encode($this->options);
         $js = <<<JS
         var ap = new APlayer({$jsOptions});
