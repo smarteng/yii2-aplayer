@@ -26,8 +26,4 @@ class AplayerAsset extends AssetBundle
     public $js = [
         'APlayer.min.js'
     ];
-    public $depends = [
-        'yii\web\JqueryAsset',
-    ];
-
 }
